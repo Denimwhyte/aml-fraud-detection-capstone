@@ -1,1 +1,9 @@
-# aml-fraud-detection-capstone
+Project Brief: AML Transaction Analysis & Fraud Pattern Detection
+Goal
+This project explores a large set of financial transactions to identify behaviour that appears unusual or out of character. By examining patterns in activity, location, device use, and network behaviour, the aim is to highlight transactions that may indicate fraud, account misuse, or suspicious movement of funds.
+Data
+The dataset contains detailed information about each transaction, including account identifiers, amounts, types, timestamps, statuses, fraud flags, geolocation, device information, and network‑related fields such as latency and slice allocation. I’ll be working with at least two connected tables (the raw transactions plus supporting dimensions), joined in SQL / BigQuery using fields like account ID, device type, or time.
+Tasks
+The work begins with cleaning and standardising the raw transaction data so it can be used reliably. Once the data is prepared, I will build a clear table setup in BigQuery and join the tables to add extra context such as device, time, and location. With the data organised, I will analyse patterns to highlight behaviour that looks unusual or suspicious, and create visualisations that make these patterns easy to understand. The findings will then be presented in a clear and straightforward way for compliance teams.
+Outcome
+This project is centred around working with real‑world operational data that isn’t always perfectly structured, and preparing it in a way that supports meaningful analysis. A key part of the work involves identifying behavioural anomalies such as velocity spikes, structuring patterns, device changes, and unexpected shifts in location. SQL plays a central role in uncovering patterns that might not be obvious at first glance, and the insights are communicated in a way that remains understandable to non‑technical people. The overall aim is to show how thoughtful analysis can support AML investigations by highlighting transactions that fall outside a customer’s usual behaviour.
