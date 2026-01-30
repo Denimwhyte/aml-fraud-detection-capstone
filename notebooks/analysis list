@@ -1,0 +1,69 @@
+AML Analytics List
+1. Descriptive Analytics
+Understanding the dataset
+Total number of transactions
+Transactions per minute
+Average, minimum, and maximum transaction amounts
+Distribution of transaction types (Deposit, Withdrawal, Transfer)
+Success vs failed transactions
+Transactions by device (Mobile, Desktop, Tablet)
+Transactions by network slice
+Transactions by location (latitude/longitude, pin code)
+2. Behavioural Analytics
+Accounts’ typical behaviour
+Number of transactions per sender
+Number of transactions per receiver
+Average amount per account
+Time‑of‑day patterns (morning, afternoon, night)
+Number of devices used by each account
+Frequency of device switching
+Typical location per account
+Distance between consecutive transactions
+Changes in behaviour within the day
+3. AML Anomaly Detection
+Suspicious behaviour patterns
+Round‑number amounts (e.g., ending in .00 or .50)
+High‑value transactions above a chosen threshold
+Rapid transactions within the same minute (velocity checks)
+Structuring or smurfing: many small deposits under a threshold
+Device switching in a short period
+Location jumps that are impossible based on time
+Multiple failed transactions before a successful one
+Transactions at unusual times
+Sudden changes in transaction type or behaviour
+4. Risk Scoring
+Combining suspicious signals
+Assign weights to each rule
+Add up the triggered rules
+Produce a final suspiciousness score
+Rank accounts or transactions by risk
+5. Dashboard Analytics
+Visualising the findings
+Summary page
+Total transactions
+Total suspicious transactions
+Percentage suspicious
+Top suspicious accounts
+Top suspicious devices
+Top suspicious locations
+Trends page
+Suspicious activity over time (minute‑level)
+Suspicious activity by device
+Suspicious activity by location
+Suspicious activity by transaction type
+Drill‑down page
+Investigating individual accounts
+All transactions for a selected account
+Which rules were triggered
+The account’s risk score
+Device and location history
+6. Analytics (more advanced)
+Going beyond the basics
+Clustering accounts by behaviour
+Time‑series anomaly detection within the day, such as:
+an account that normally sends 1–2 transactions suddenly sending 20
+an account that usually sends £50–£200 suddenly sending £2,000
+activity spikes at unusual times
+a sudden burst of small deposits (structuring)
+a sudden drop or stop in activity
+Network analysis (sender to receiver relationships)
