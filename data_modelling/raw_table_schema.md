@@ -12,4 +12,5 @@ device_used	STRING	NULLABLE	Device used to perform the transaction (Mobile, Desk
 network_slice_id	STRING	NULLABLE	Identifier for the network slice used during the transaction
 latency_ms	FLOAT64	NULLABLE	Network latency during the transaction in milliseconds
 slice_bandwidth_mbps	FLOAT64	NULLABLE	Bandwidth allocated to the network slice in Mbps
-pin_code	STRING	NULLABLE	PIN code used for authentication synthetic data
+pin_code	STRING	NULLABLE	PIN code used for authentication
+scenario_type	STRING	NULLABLE	AML pattern label (normal, structuring, velocity, round_sum)
