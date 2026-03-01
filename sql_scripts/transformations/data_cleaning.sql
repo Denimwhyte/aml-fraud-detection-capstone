@@ -85,7 +85,7 @@ FROM (
   SELECT DISTINCT scenario_type AS scenario_type_name
   FROM `aml-capstone-project.aml_project.stg_transactions`
 )
-ORDER BY scenario_type_name;
+ORDER BY scenario_type_name
 
 
 
