@@ -1,3 +1,30 @@
+--fact_transactions creation
+CREATE OR REPLACE TABLE `aml-capstone-project.aml_project.fact_transactions` AS
+SELECT
+  t.transaction_id,
+  t.sender_account_id,
+  t.receiver_account_id,
+  t.timestamp,
+  t.transaction_amount,
+  t.latency_ms,
+  t.slice_bandwidth_mbps,
+  t.fraud_flag,
+
+  d.device_used_id,
+  tt.transaction_type_id,
+  s.scenario_type_id,
+  ts.transaction_status_id
+
+FROM `aml-capstone-project.aml_project.stg_transactions` t
+LEFT JOIN `aml-capstone-project.aml_project.dim_device` d
+  ON t.device_used = d.device_used_name
+LEFT JOIN `aml-capstone-project.aml_project.dim_transaction_type` tt
+  ON t.transaction_type = tt.transaction_type   -- FIXED
+LEFT JOIN `aml-capstone-project.aml_project.dim_scenario` s
+  ON t.scenario_type = s.scenario_type_name
+LEFT JOIN `aml-capstone-project.aml_project.dim_status` ts
+  ON t.transaction_status = ts.transaction_status_name;
+
 --dim_table creation
 --Creates a lookup table of all unique transaction types with a numeric ID for the ERD star schema.
 CREATE OR REPLACE TABLE `aml-capstone-project.aml_project.dim_transaction_type` (
