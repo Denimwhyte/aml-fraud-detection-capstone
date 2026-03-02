@@ -58,7 +58,7 @@ JOIN `aml-capstone-project.aml_project.dim_scenario` sc
 GROUP BY
   f.scenario_type_id,
   sc.scenario_type_name
-ORDER BY total_transactions DESC;
+ORDER BY total_transactions DESC
 
 
 
