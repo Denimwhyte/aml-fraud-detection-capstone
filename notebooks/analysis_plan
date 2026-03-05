@@ -1,15 +1,13 @@
-analysis 
-1. Unusually large transactions
+Analysis To Be Done
+
+Unusually large transactions  
 High‑value anomalies, threshold breaches
-2. Unusually small “test” transactions
+
+Unusually small test transactions  
 Structuring / smurfing behaviour
-3. Many transactions in a short time
-Velocity checks (explicitly required)
-4. New or unusual device types
-Suspicious behaviour patterns
-5. Transactions at strange times
-Behavioural anomalies
-6. Many failed or pending transactions
-Fraud attempts, credential testing
-7. Accounts that appear too often
-Suspicious clusters / mule accounts
+
+Many transactions in a short time  
+Velocity checks
+
+Accounts that appear too often  
+Suspicious clusters / mule‑risk accounts
